@@ -20,7 +20,6 @@ public class SearchForCourseTagsJob {
         Logger.getLogger("org.apache").setLevel(Level.WARN);
         Logger.getLogger(ContextHandler.class).setLevel(Level.WARN);
 
-
         SparkConf conf = new SparkConf().setAppName("startingSpark")
                 .setMaster("local[*]");
         JavaSparkContext sc = new JavaSparkContext(conf);
